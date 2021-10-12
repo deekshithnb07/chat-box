@@ -1,0 +1,22 @@
+.chat-box{
+    color: black;
+    position: fixed;
+    /* margin: 10% 10% auto 80%; */
+}
+
+#btn{
+    font-size: 50px;
+    position: fixed;
+    margin: 40% 10% auto 90%;
+}
+
+.chatbot{
+    position: fixed;
+    margin: 6% 2% auto 80%; 
+}
+
+.chat{
+    margin: 10% 10% auto 80%;
+    position: fixed;
+    border: 2px solid black !important;
+}

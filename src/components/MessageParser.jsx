@@ -6,5 +6,12 @@ export default class MessageParser {
   
     parse(message) {
       console.log(message);
+      if (message.includes('hello')) {
+        this.actionProvider.handleHello();
+      }
+  
+      if (message.includes('dog')) {
+        this.actionProvider.handleDog();
+      } 
     }
   }
