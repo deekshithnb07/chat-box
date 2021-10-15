@@ -1,22 +1,27 @@
+import React from "react";
+
 class ActionProvider {
-    constructor(createChatbotMessage, setStateFunc, createClientMessage) {
-      this.createChatbotMessage = createChatbotMessage;
-      this.setState = setStateFunc;
-      this.createClientMessage = createClientMessage;
-    }
-    handleDog() {
-        const message = this.createChatbotMessage(
-          "Here's a nice dog picture for you!",
-          {
-            widget: 'dogPicture',
-          }
-        );
-    
-        this.setState((prev) => ({
-          ...prev,
-          messages: [...prev.messages, message],
-        }));
-      }
+  constructor(createChatbotMessage, setStateFunc, createClientMessage) {
+    this.createChatbotMessage = createChatbotMessage;
+    this.setState = setStateFunc;
+    this.createClientMessage = createClientMessage;
   }
+
+ 
+    handleContact = () => {
+      const message = this.createChatbotMessage(
+        "Call 1999 for Trilingual Health Assistance.",
+        {
+          widget: "emergencyContact",
+          loading: true,
+          terminateLoading: true,
+          withAvatar: true
+        }
+      );
   
-  export default ActionProvider;
+      this.addMessageToState(message);
+    };
+  
+}
+
+export default ActionProvider;
