@@ -25,7 +25,7 @@ class ActionProvider {
   // contact action
   handleContact = () => {
     const message = this.createChatBotMessage(
-      "Call 1999 for Any Issues.",
+      "Call 1999 for Any queries.",
       {
         widget: "contact",
         loading: true,

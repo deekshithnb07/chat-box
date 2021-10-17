@@ -18,9 +18,7 @@ function ChatBox(){
     return(
     <div className="chat-box">
 
-    <button onClick={handleChat} id="btn">
-      <i className="fas fa-robot" />
-      </button>
+      <i className="fas fa-robot" onClick={handleChat} id="btn" />
       {open === true ? 
       <div className="chatbot" >
        <Chatbot

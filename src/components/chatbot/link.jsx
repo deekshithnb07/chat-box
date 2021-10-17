@@ -9,11 +9,7 @@ function Link(){
         target="_blank"
         className="link"
         >
-        <button 
-        className="link"
-        >
         click me
-        </button>
         </a>
     )
 }
