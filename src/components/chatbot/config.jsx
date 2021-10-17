@@ -6,12 +6,14 @@ const botName = "sky-bot"
 
 const config = {
   initialMessages: [createChatBotMessage(`Hello I'm ${botName}`),
-  createChatBotMessage(`how can I help you`),
+  createChatBotMessage(`how may I help you`,
   {
     withAvatar: false,
     delay: 500,
-  }
-],
+  })
+  ],  
+  state: {},
+  botName: botName,
   customStyles: {
     botMessageBox: {
       backgroundColor: "#04668a"
@@ -20,12 +22,14 @@ const config = {
       backgroundColor: "#0f5faf"
     }
   },
-  state: {},
-  customComponents: { botAvatar: (props) => <i className="fas fa-robot" {...props} /> },
+  
+  customComponents: { botAvatar: (props) => <i className="fas fa-robot" /> },
+  
   widgets: [
     {
-      widgetName: "flight",
+      widgetName: "flights",
       widgetFunc: (props) => <Flights {...props} />,
+      
     },
     {
       widgetName: "contacts",

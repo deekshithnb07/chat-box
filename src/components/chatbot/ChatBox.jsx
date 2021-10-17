@@ -25,11 +25,12 @@ function ChatBox(){
       <div className="chatbot" >
        <Chatbot
       config={config}
-      messageParser={MessageParser}
       actionProvider={ActionProvider}
+      messageParser={MessageParser}
       className="chat"
-      />
+      /> 
       </div>
+      
       : null}
       
     </div>
