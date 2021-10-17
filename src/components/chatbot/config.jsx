@@ -1,6 +1,7 @@
 import { createChatBotMessage } from 'react-chatbot-kit';
-import ContactLink from '../contact';
+import ContactLink from './contact';
 import Flights from './flights';
+import Link from './link';
 
 const botName = "sky-bot"
 
@@ -10,6 +11,7 @@ const config = {
   {
     withAvatar: false,
     delay: 500,
+    widget: "flights"
   })
   ],  
   state: {},
@@ -34,6 +36,10 @@ const config = {
     {
       widgetName: "contacts",
       widgetFunc: (props) => <ContactLink />,
+    },
+    {
+      widgetName: "link",
+      widgetFunc: (props) => <Link />,
     },
   ]
 };

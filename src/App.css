@@ -24,3 +24,23 @@
 i{
     margin: 15px;
 }
+
+button{
+    border-style: none;
+}
+
+.option-button{
+    color: black;
+    background-color: #ccb0fa;
+    padding: 8px;
+    margin: 2px;
+    border-style: none;
+}
+
+.link{
+    color: black;
+    background-color: #b8afce;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10%;
+}

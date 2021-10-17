@@ -20,7 +20,11 @@ class MessageParser {
       return this.actionProvider.handleContact();
     }
 
-    return this.actionProvider.handleOptions({ withAvatar: true });
+    if (message.includes("thanks") || message.includes("thank you")) {
+      return this.actionProvider.handleThanks();
+    }
+    
+    return this.actionProvider.handleOptions();
   }
 }
 export default MessageParser;
